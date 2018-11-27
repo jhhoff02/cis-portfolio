@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>JavaScript Internal Script</title>
+        <base href="http://www.tutorialspoint.com/" />
+        <script type="text/JavaScript">
+            function Hello(){
+                alert("Hello, World");
+            }
+        </script>
+        <script type="text/JavaScript">
+            function EventHandler(){
+                alert("I'm an event handler!");
+            }
+        </script>
+        <script src="/Jan25.js" type="text/JavaScript"></script>
+        <script type="text/JavaScript"> 
+            document.write("Hello JavaScript!"); 
+        </script> 
+        <noscript>Your browser does not support JavaScript!</noscript> 
+        
+        <script>
+            function concatenate(first, last)
+            {
+                var full;
+                full = first + last;
+                return full;
+            }
+        </script>
+        <script>
+            function secondFunction()
+            {
+                var result;
+                result = concatenate('Zara', 'Ali');
+                document.write (result );
+            }
+        </script>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+        </script>
+    </head>
+    <body>
+        <p onmouseover="EventHandler();">Bring your mouse here to see an alert</p>
+    </body>
+
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+        var name;
+        var school = "University of Louisville";
+        var marks;
+        var price = 78.87;
+        var marks = 29;
+
+        var book = "maths";
+        if( book == "history" ){
+            document.write("<b>History Book</b>");
+        } else if( book == "maths" ){
+            document.write("<b>Maths Book</b>");
+        }
+        else{
+            document.write("<b>Unknown Book</b>");
+        }
+
+        var grade='A';
+        document.write("Entering switch block<br />");
+        switch (grade)
+        {
+            case 'A': document.write("Good <br />");
+            break;
+            case 'B': document.write("Decent<br />");
+            break;
+            case 'C': document.write("Passed<br />");
+            break;
+            default: document.write("Unknown<br />")
+        }
+        document.write("Exiting switch block");
+        </script>
+        <p>Set the variable to different value and then try...</p>
+
+    </script>
+    <script type="text/javascript">
+        var count = 0;
+        document.write("Starting Loop ");
+        while (count < 10){
+            document.write("Current Count : " + count + "<br />");
+            count++;
+        }
+        document.write("Loop stopped!");
+    </script>
+    <script type="text/javascript">
+        var count = 0;
+        document.write("Starting Loop" + "<br />");
+        do{
+            document.write("Current Count : " + count + "<br />");
+            count++;
+        } while (count < 5);
+        document.write ("Loop stopped!");
+    </script>
+    <script type="text/javascript">
+        var count;
+        document.write("Starting Loop" + "<br />");
+        for(count = 0; count < 10; count++){
+            document.write("Current Count : " + count );
+            document.write("<br />");
+        }
+        document.write("Loop stopped!");
+    </script>
+    <script type="text/javascript">
+        function sayHelloAlert()
+        {
+            alert("Hello there Alert");
+        }
+    </script>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="sayHelloAlert()" value="Say Hello">
+    </form>
+    <script type="text/javascript">
+        function sayHello(name, age)
+        {
+            document.write (name + " is " + age 	+ " years old.");
+        }
+    </script>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="sayHello('Zara', 7)" value="Say Hello">
+    </form>
+</html>

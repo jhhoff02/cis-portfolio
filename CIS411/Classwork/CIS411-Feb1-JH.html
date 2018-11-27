@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        //Fibonacci series function
+        function fibSeries() {
+            var lastNum = fib.value;
+            var count = 1;
+            var previous1 = 1;
+            var previous2 = 0;
+            document.write(previous1 + "</br>");
+            while (count < lastNum) {
+                start = previous1 + previous2;
+                document.write(start + "</br>");
+                previous2 = previous1;
+                previous1 = start;
+                count++;
+            }
+        }
+        //seconds function
+        function seconds() {
+            var hours = hr.value;
+            var minutes = min.value;
+            var seconds = hours * 3600 + minutes * 60;
+            sec.value = seconds;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p> Fibonacci Series - The click of a button should call a function that calculates the numbers and shows it in the browser. </p>
+        <input type="text" id="fib" />
+        <input type="button" value="Fibonacci Series" onclick="fibSeries();"/></br>
+        <p> Seconds Calculation </p>
+            <ul>
+                <li>The first and second textboxes take inputs as number of hours and minutes.</li>
+
+                <li>When the button is clicked, a function should be called to calculate the number of seconds based on hours and minutes provided.</li>
+
+                <li>The third textbox should not have any border. Use style="border:none" in the input statement. When the button is clicked, the function should set the value of the third textbox as the number of seconds.</li>
+            </ul>
+        <input type="text" id="hr" /><input type="text" id="min" /> <input type="button" value="Number of Seconds" onclick="seconds();" /></br>
+        <input type="text" id="sec" style="border:none" />
+    </form>
+</body>
+</html>
