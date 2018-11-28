@@ -2,7 +2,7 @@
 
 #### Here you will find a repository of my complete works as a Computer Information Systems major.
 
------ Table of Contents
+## Table of Contents
 
 ===== CIS150
 #### Information Technology Ethics (Case Analysis)
