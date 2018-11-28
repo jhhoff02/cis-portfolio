@@ -34,7 +34,7 @@
 
 
 ### [CIS410](https://github.com/jhhoff02/cis-portfolio/tree/master/CIS410)
-#### Management of Information Systems (Case Reports and CUE Course)
+#### Management of Information Systems (Case Reports, CUE Course, and Interview Materials)
 
 
 ### [CIS411](https://github.com/jhhoff02/cis-portfolio/tree/master/CIS411)
