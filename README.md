@@ -1,4 +1,4 @@
-# cis-portfolio
+# Jessica Hoffman's CIS Portfolio
 
 #### Here you will find a repository of my complete works as a Computer Information Systems major.
 
